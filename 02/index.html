@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 02</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container border mt-3 p-3 bg-secondary text-light">
+        <div class="border  p-3 ">
+            <h2>Operaciones</h2>
+            <div class="row">
+                <div class="col-3">
+                    <label for="numero1" class="form-label">Primer Numero</label>
+                    <input type="text" class="form-control" id="numero1" onkeypress="return valideKey(event);">
+                </div>
+                <div class="col-3">
+                    <label for="numero-2" class="form-label">Segundo Numero</label>
+                    <input type="text" class="form-control" id="numero2" onkeypress="return valideKey(event);">
+                </div>
+
+                <div class="col-4">
+                    <br>
+                    <button type="button" class="btn btn-primary mt-2 boton" onclick="todos()">Calcular</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5 border p-3">
+            <h3>Resultado:</h3>
+            <div class="row d-flex justify-content-between disabled">
+                <div class="col-2">
+                    <label for="resultado_suma" class="form-label">Suma</label>
+                    <input type="text" class="form-control " id="resultado_suma" disabled>
+                </div>
+                <div class="col-2">
+                    <label for="resultado_resta" class="form-label">Resta</label>
+                    <input type="text" class="form-control" id="resultado_resta" disabled>
+                </div>
+                <div class="col-2">
+                    <label for="resultado_multiplicacion" class="form-label">Multiplicacion</label>
+                    <input type="text" class="form-control" id="resultado_multiplicacion" disabled>
+                </div>
+                <div class="col-2">
+                    <label for="resultado_division" class="form-label">Division</label>
+                    <input type="text" class="form-control" id="resultado_division" disabled>
+                </div>
+                <div class="col-2">
+                    <label for="resultado_modulo" class="form-label">Modulo</label>
+                    <input type="text" class="form-control" id="resultado_modulo" disabled>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+    <!-- Bootstrap Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

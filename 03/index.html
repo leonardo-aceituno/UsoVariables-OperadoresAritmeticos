@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 03</title>
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="border  p-3 my-3">
+            <h2>Temperatura</h2>
+            <div class="row">
+                <div class="col-3">
+                    <label for="celsius" class="form-label">° Celsius</label>
+                    <input type="text" class="form-control" id="celsius" onkeypress="return valideKey(event)"; onchange="fahrenheit(this.value);kelvin(this.value)">
+                </div>
+                <div class="col-3">
+                    <label for="fahrenheit" class="form-label">° Fahrenheit</label>
+                    <input type="text" class="form-control " id="fahrenheit" disabled>
+                </div>
+
+                <div class="col-3">
+                    <label for="kelvin" class="form-label">° Kelvin</label>
+                    <input type="text" class="form-control " id="kelvin" disabled>
+                </div>
+            </div>
+
+            <p class="pt-2 fs-6">*Ingresar numero y quitar el foco al input</p>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap Bundle with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
